@@ -1,0 +1,35 @@
+[02-07-25 11:21:36.805] LOG  : General     , 1751455296805> 2,177,011> cachedir set to "/home/steam/Zomboid".
+[02-07-25 11:21:36.851] LOG  : General     , 1751455296851> 2,177,057> version=41.78.16 demo=false.
+[02-07-25 11:21:36.853] LOG  : General     , 1751455296852> 2,177,058> revision= date= time=.
+[02-07-25 11:21:36.854] LOG  : General     , 1751455296854> 2,177,059> server name is "servertest".
+[02-07-25 11:21:36.855] LOG  : General     , 1751455296855> 2,177,061> map_t.bin does not exist, cannot determine the server's WorldVersion.  This is ok the first time a server is started..
+[02-07-25 11:21:36.857] LOG  : General     , 1751455296857> 2,177,062> Loading networking libraries....
+[02-07-25 11:21:36.858] LOG  : General     , 1751455296857> 2,177,063> Loading steam_api....
+[02-07-25 11:21:36.858] LOG  : General     , 1751455296858> 2,177,064> Loading RakNet64....
+[02-07-25 11:21:36.859] LOG  : General     , 1751455296859> 2,177,064> Loading ZNetJNI64....
+[02-07-25 11:21:36.860] LOG  : Network     , 1751455296860> 2,177,066> [02-07-25 11:21:36.860] > ZNet: SetLogLevel 2.
+[02-07-25 11:21:36.862] LOG  : Network     , 1751455296862> 2,177,067> [02-07-25 11:21:36.862] > ZNet: SteamAPI initialised successfully.
+[02-07-25 11:21:36.862] LOG  : General     , 1751455296862> 2,177,068> SteamUtils initialised successfully.
+[02-07-25 11:21:37.081] LOG  : General     , 1751455297080> 2,177,286> translator: language is EN.
+[02-07-25 11:21:37.154] LOG  : General     , 1751455297154> 2,177,359> LightingFPS set to 15.
+[02-07-25 11:21:37.168] LOG  : General     , 1751455297168> 2,177,373> reading /home/steam/Zomboid/Server/servertest.ini.
+[02-07-25 11:21:37.172] LOG  : General     , 1751455297172> 2,177,377> writing /home/steam/Zomboid/Server/servertest.ini.
+[02-07-25 11:21:37.180] LOG  : Network     , 1751455297180> 2,177,386> [02-07-25 11:21:37.180] > ZNet: SZombienet -> SZombienet: Init.
+[02-07-25 11:21:37.223] LOG  : Network     , 1751455297223> 2,177,428> [02-07-25 11:21:37.223] > ZNet: SteamGameServer seems to be initialized.
+[02-07-25 11:21:37.224] LOG  : Network     , 1751455297224> 2,177,430> [02-07-25 11:21:37.224] > ZNet: SZombienet -> SSteamSDK: SetMaxPlayerCount.
+[02-07-25 11:21:37.226] LOG  : General     , 1751455297226> 2,177,431> Waiting for response from Steam servers.
+[02-07-25 11:21:39.029] LOG  : Network     , 1751455299029> 2,179,235> [02-07-25 11:21:39.029] > ZNet: SSteamSDK -> SZombienet: OnSteamServersConnected.
+[02-07-25 11:21:39.030] LOG  : Network     , 1751455299030> 2,179,236> [02-07-25 11:21:39.030] > ZNet: OnSteamServersConnected.
+[02-07-25 11:21:39.031] LOG  : Network     , 1751455299031> 2,179,237> [02-07-25 11:21:39.031] > ZNet: SZombienet -> SSteamSDK: SetMaxPlayerCount.
+[02-07-25 11:21:39.032] LOG  : Network     , 1751455299032> 2,179,238> [02-07-25 11:21:39.032] > ZNet: Public IP: 184.22.8.63.
+[02-07-25 11:21:39.033] LOG  : General     , 1751455299033> 2,179,239> Start making backup to: /home/steam/Zomboid/backups/startup.
+[02-07-25 11:21:39.090] LOG  : General     , 1751455299090> 2,179,295> compressionElapsed=44ms, mergingElapsed=10ms.
+[02-07-25 11:21:39.093] LOG  : General     , 1751455299093> 2,179,299> Backup made in 59 ms.
+[02-07-25 11:21:39.101] LOG  : General     , 1751455299101> 2,179,307> user database "/home/steam/Zomboid/db/servertest.db".
+[02-07-25 11:21:39.173] LOG  : General     , 1751455299173> 2,179,379> User 'admin' not found, creating it .
+[02-07-25 11:21:39.174] LOG  : General     , 1751455299174> 2,179,380> Command line admin password: null.
+[02-07-25 11:21:39.175] LOG  : General     , 1751455299175> 2,179,380> Enter new administrator password: .
+[02-07-25 11:21:39.176] ERROR: General     , 1751455299176> 2,179,381> java.util.NoSuchElementException: No line found.
+[02-07-25 11:21:39.176] ERROR: General     , 1751455299176> 2,179,382> 	at java.base/java.util.Scanner.nextLine(Unknown Source).
+[02-07-25 11:21:39.177] ERROR: General     , 1751455299177> 2,179,383> 	at zombie.network.ServerWorldDatabase.create(ServerWorldDatabase.java:507).
+[02-07-25 11:21:39.178] ERROR: General     , 1751455299178> 2,179,383> 	at zombie.network.GameServer.main(GameServer.java:644).

@@ -1,0 +1,22 @@
+version: '3.8'
+
+services:
+  pz-server:
+    image: danixu86/project-zomboid-dedicated-server:latest
+    container_name: pz-server
+    restart: unless-stopped
+
+    ports:
+      - '16261:16261/udp'
+      - '8766:8766/udp'
+      - '8767:8767/udp'
+
+    environment:
+      - SERVERNAME=server-sophie-1-14
+      - PASSWORD=
+      - ADMINUSERNAME=admin
+      - ADMINPASSWORD=Yamroll082!
+      - MAXPLAYERS=16
+
+    volumes:
+      - ./Zomboid:/home/steam/Zomboid

@@ -1,0 +1,31 @@
+version: '3.8'
+
+services:
+  pz-server:
+    image: danixu86/project-zomboid-dedicated-server:latest
+    container_name: pz-server
+    restart: unless-stopped
+
+    # ======= resource constraints =======
+    # จำกัดเมมโมรี่สูงสุด 6GB, สำรองขั้นต่ำ 2GB
+    mem_limit: 10g
+    mem_reservation: 8g
+
+    # จับ CPU สูงสุด 2 cores, ถ้าต้องการ share-based ให้ใช้ cpu_shares
+    cpus: 4.0
+    # cpu_shares: 1024       # ถ้าต้องการปรับน้ำหนักให้ container นี้เทียบกับตัวอื่น
+
+    ports:
+      - '16261:16261/udp'
+      - '8766:8766/udp'
+      - '8767:8767/udp'
+
+    environment:
+      - SERVERNAME=server-sophie-1-14
+      - PASSWORD=
+      - ADMINUSERNAME=admin
+      - ADMINPASSWORD=Yamroll082!
+      - MAXPLAYERS=16
+
+    volumes:
+      - ./Zomboid:/home/steam/Zomboid
